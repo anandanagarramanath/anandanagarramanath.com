@@ -1,0 +1,526 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Allow content to wrap to new lines when needed */
+    justify-content: space-between;
+}
+
+body {
+    font-family: "Libre Baskerville", monospace;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+}
+
+header {
+    background-color: #11acc7;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 70.4px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Make the list items appear horizontally */
+    
+}
+
+nav ul li {
+    margin-right: 40px;
+    margin-top: 15%;
+    right: 100px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #f0e8e8;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    align-items: right;
+}
+
+.logo img {
+    max-height: 90px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add some spacing between the logo and the heading */
+    left: 100px;
+    margin-top: -10px;
+    margin-left: -8px;
+}
+
+main {
+    background-color: #faab00;
+    width: 60%;
+    height: 25vh;
+    padding: 20%;
+    display: flex;
+    flex: 1;
+}
+
+.slider img {
+    width: 79.8%;
+    height: 50%;
+    position: absolute;
+    margin-top: -19.9%;
+    margin-right: 150%;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+    flex-wrap: wrap;
+    
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+/* Add this to your main.css or create a new CSS file for the sidebar styles */
+.sidebar {
+    width: 242px;
+    height:286px ;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: -35%;
+    margin-top: -33.1%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+.principle{
+    background-color: #ebe7e1;
+    border: 2px solid #faab00;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 6.98%;
+    margin-left: -34%;
+    height: max-content;
+    
+}
+.principle h2 {
+    background-color: #11acc7;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.principle p {
+    color: #666;
+    font-size: 16px;
+}
+.principle img{
+    width: 250px;
+    margin-top: 2px;
+    border: none;
+    margin-left: 5px;
+}
+
+.welcome-box {
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #1F45FC;
+    margin-left: 4.8%;
+    width: 75%;
+    margin-top: 62px;
+    height: fit-content;
+    position: absolute;
+}
+.welcome-box h2 {
+    color: #1F45FC;
+    padding: 10px 25px;
+    margin: 0;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1F45FC;
+}
+.welcome-box p {
+    padding: 15px 25px 25px 25px;
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 25px;
+}
+.facility {
+    margin-top: 430px;
+    margin-left: -19.5%;
+    position:absolute;
+    background-color: wheat;
+    width: 99%;
+}
+.facility h3 {
+    margin-bottom: 0px;
+    border-bottom: 3px solid #eb370a;
+    color: #1F45FC;
+}
+h3 {
+    font-size: 1.500rem;
+    line-height: 2rem;
+}
+
+/* Media query for mobile devices with a maximum width of 768px */
+@media (max-width: 768px) {
+  header {
+      height: auto;
+  }
+
+  .logo img {
+      max-height: 50px; /* Adjust the logo height for mobile */
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;  /* Stack the navigation items vertically */
+  }
+
+  nav ul li {
+      margin-right: -80%; /* Remove right margin for navigation items */
+      margin-top: 10px; /* Remove top margin for navigation items */
+      right: 0;
+      font-size: 11px; 
+  }
+
+  main {
+      width: 89%; /* Occupy the full width of the screen */
+      padding: 10px; /* Add some padding for better mobile layout */
+      height: 210vh;
+    }
+
+
+  .slider img {
+      display: none; /* Hide the slider images on mobile */
+      margin-top: -2.5vw;
+      margin-left: -3.5%;
+      position: fixed;
+    }
+
+
+  /* Add styles for the active slider image on mobile */
+  .slider img.active {
+      display: block;
+      width: 110%;
+      height: auto;
+      position: static;
+      opacity: 1;
+  }
+
+  .sidebar {
+      width: 110%; /* Occupy the full width of the screen */
+      height: 182px;
+      margin: 0; /* Remove the negative margins */
+      margin-top: -10px; /* Add some spacing between main content and sidebar */
+      margin-right: -8px;    
+      position: inherit;
+    padding: 5px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin-top: -8px;
+      font-size: x-small;
+      line-height: 1;
+    
+  }
+  .sidebar li {
+    margin-bottom: 10px;
+    right: 10px;
+}
+
+
+ h1 {
+        font-size: 14px; /* Adjust the font size for mobile */
+        margin-top: 0; /* Add some spacing below the h1 tag */
+        margin-left: 35px;
+    }
+    .principle{
+        background-color: #ebe7e1;
+        border: 2px solid #faab00;
+        border-radius: 4px;
+        width: 93.5%;
+        padding: 10px;
+        margin-top: 51%;
+        margin-left: -3%;
+        height: 40%;
+        position: absolute;
+        
+    }
+    .principle h2 {
+        background-color: #11acc7;
+        font-size: 18px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .principle p {
+        color: #666;
+        font-size: 16px;
+        top: 50%;
+        margin-top: 55%;
+    }
+    .principle img{
+        width: 180px;
+        height: 140px;
+        margin-top: 2px;
+        border: none;
+        margin-left: 70px;
+        position:absolute;
+        justify-items: center;
+    }
+    .welcome-box {
+        padding: 0;
+        background: #f0ebeb;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-top: 4px solid #1F45FC;
+        margin-left: -2%;
+        width: 98%;
+        margin-top: 466px;
+        height:fit-content ;
+        position: absolute;
+    }
+    .welcome-box h2 {
+        color: #1F45FC;
+        padding: 10px 25px;
+        margin: 0;
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 800;
+        text-transform: uppercase;
+        border-bottom: 1px solid #1F45FC;
+    }
+    .welcome-box p {
+        padding: 15px 25px 25px 25px;
+        margin: 0;
+        color: #666;
+        font-size: 12px;
+        line-height: 25px;
+    }
+    
+    .container {
+        width: 50%;
+        height: 90vh;
+        position:absolute;
+        right: 0;
+        display: flex;
+        
+        top: 225%;
+    
+    }
+
+    .footer {
+        display: flex;
+        color: #fffefe;
+        padding: 2rem 0;
+        height: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #000000;
+        bottom: -273%;
+        position: absolute;
+    }
+
+}
+
+
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -15%;
+    margin-left: 100%;
+    
+}
+
+
+.main-div {
+    margin-top: 2rem;
+    width: 20rem;
+    padding: 2rem 1rem;
+    border-radius: 0.6rem;
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+.img-container {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    margin: auto;
+    margin-bottom: .7rem;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.job {
+    font-weight: bold;
+    color: #e65b00;
+}
+
+.author, .job, .text {
+    margin-bottom: .5rem;
+}
+
+.text {
+    text-align: center;
+}
+
+.btnContainer {
+    color: #e65b00;
+    font-size: 1.5rem;
+    width: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.randomBtn {
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: #e65b00;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.randomBtn:hover {
+    color: rgb(168, 160, 160);
+    background-color:#c4560d;
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+.fa-solid:hover {
+    color: rgb(28, 67, 104);
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+
+.footer {
+    display: flex;
+    color: #fffefe;
+    padding: 2rem 0;
+    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #000000;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.footer h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.links li {
+    list-style: none;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.registration {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration input {
+    padding: 10px;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    margin: 1rem 0;
+}
+
+button {
+    border: none;
+    padding: 12px 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.address {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+    list-style: none;
+}
+
+.social li {
+    margin: 0 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
