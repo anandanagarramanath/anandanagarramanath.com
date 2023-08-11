@@ -212,7 +212,7 @@ h3 {
   main {
       width: 89%; /* Occupy the full width of the screen */
       padding: 10px; /* Add some padding for better mobile layout */
-      height: 215vh;
+      height: 195vh;
     }
 
 
@@ -330,7 +330,7 @@ h3 {
         position:absolute;
         right: 0;
         display: flex;
-        top: 235%;
+        top: 219%;
     
     }
 
