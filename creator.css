@@ -128,18 +128,8 @@ h2 {
         margin-bottom: 1rem;
     }
 
-    .footer {
-        display: flex;
-        color: #fffefe;
-        padding: 2rem 0;
-        height: auto;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        background-color: #000000;
-        bottom: -96%;
-        position: absolute;
+    
 
-    }
 }
 
 
