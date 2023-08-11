@@ -326,11 +326,11 @@ h3 {
     
     .container {
         width: 50%;
-        height: 60vh;
+        height: 65vh;
         position:absolute;
         right: 0;
         display: flex;
-        top: 219%;
+        top: 225%;
     
     }
 
@@ -342,7 +342,7 @@ h3 {
         justify-content: space-around;
         flex-wrap: wrap;
         background-color: #000000;
-        bottom: -279%;
+        bottom: -285%;
         position: absolute;
     }
 
