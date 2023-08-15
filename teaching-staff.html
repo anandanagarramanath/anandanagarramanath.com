@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Teaching Staff</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: aqua;
+            
+        }
+        .teacher {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            
+        }
+        .teacher img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .teacher-details {
+            flex: 1;
+        }
+        @media screen and (max-width: 768px) {
+            .teacher {
+                flex-direction: column;
+                text-align: center;
+                
+            }
+            .teacher img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: rgb(238, 245, 245);
+            top: 50%;
+            
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://drive.google.com/uc?export=view&id=1zGiFq9sloiM_nktSHVRetE7PjfW1Qs5C" alt="My School Logo">
+        </div>
+        <div class="schooln">
+        <h1>ANANDANAGAR RAMANATH HIGH SCHOOL</h1>
+        <p class="since"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since-1929</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Teaching Staff</h1>
+        <div class="teacher">
+            <img src="teacher1.jpg" alt="Teacher 1">
+            <div class="teacher-details">
+                <h2>John Doe</h2>
+                <p>Teaches: Mathematics</p>
+            </div>
+        </div>
+        <!-- Repeat the teacher div for each teacher -->
+        <!-- Example:
+        <div class="teacher">
+            <img src="teacher2.jpg" alt="Teacher 2">
+            <div class="teacher-details">
+                <h2>Jane Smith</h2>
+                <p>Teaches: Science</p>
+            </div>
+        </div>
+        -->
+        <div class="teacher">
+            <img src="teacher2.jpg" alt="Teacher 2">
+            <div class="teacher-details">
+                <h2>John Doe</h2>
+                <p>Teaches: Mathematics</p>
+            </div>
+        </div>
+        <div class="teacher">
+            <img src="teacher1.jpg" alt="Teacher 3">
+            <div class="teacher-details">
+                <h2>John Doe</h2>
+                <p>Teaches: Mathematics</p>
+            </div>
+        </div>
+        <div class="teacher">
+            <img src="teacher1.jpg" alt="Teacher 4">
+            <div class="teacher-details">
+                <h2>John Doe</h2>
+                <p>Teaches: Mathematics</p>
+            </div>
+        </div>
+        <div class="teacher">
+            <img src="teacher1.jpg" alt="Teacher 5">
+            <div class="teacher-details">
+                <h2>John Doe</h2>
+                <p>Teaches: Mathematics</p>
+            </div>
+        </div>
+        <div class="teacher">
+            <img src="teacher1.jpg" alt="Teacher 6">
+            <div class="teacher-details">
+                <h2>John Doe</h2>
+                <p>Teaches: Mathematics</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="box">
+            <h2> Links </h2>
+            <ul class="links">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="courses.html"> courses </a></li>
+                <li><a href="#about"> About Us </a></li>
+                <li><a href="contact.html"> Contact Us </a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2> Developed By  </h2>
+            <ul class="links">
+                <p>To know about the Developers click the below button</p>
+            </ul>
+            <form action="creator.html" class="registration">
+               
+                <button type="submit"> Developers Info </button>
+            </form>
+        </div>
+        <div class="box">
+            <h2> Contact </h2>
+            <p class="address"> 123, xyz Road, ABC 20 <br>
+                Hisar, Haryana, India
+            </p>
+            <ul class="social">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
+        <p3>&copy; 2023 ANANDANAGAR RAMANATH HIGH SCHOOL. All rights reserved.</p3>
+    </footer>
+   
+</body>
+</html>

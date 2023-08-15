@@ -345,7 +345,10 @@ h3 {
         bottom: -285%;
         position: absolute;
     }
-
+    .footer p3{
+       
+        top: 80%;
+    }
 }
 
 
